@@ -57,9 +57,10 @@
     .right{
             flex: 1;
             padding: 25px;
-
+            min-height: fit-content;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             gap: 20px;
 
             h1{
@@ -75,8 +76,8 @@
               input{
                 padding: 10px;
                 outline: none;
-                border: 1px solid rgb(199, 194, 194)
-              }
+                border: none;
+                border-bottom: 1px solid rgb(199, 194, 194)              }
 
               button{
                 width: 25%;
