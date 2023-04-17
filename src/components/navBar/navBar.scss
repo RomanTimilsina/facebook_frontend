@@ -1,0 +1,47 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  border-bottom: 1px solid darkgray;
+  margin-bottom: 20px;
+
+  .left{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    span{
+      font-weight: bold;
+      color: darkblue;
+    }
+
+    .search{
+      display: flex;
+      align-items: center;
+      input{
+  
+      }
+    }
+  }
+
+  
+
+  .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .user{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img{
+        width: 30px;height: 30px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
