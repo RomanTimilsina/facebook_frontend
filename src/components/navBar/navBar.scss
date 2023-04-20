@@ -2,10 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  padding: 10px 0;
+  margin-bottom: 10px;
 
   border-bottom: 1px solid darkgray;
-  margin-bottom: 20px;
+  
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 
   .left{
 
