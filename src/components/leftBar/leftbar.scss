@@ -3,6 +3,11 @@
   position: sticky;
   top: 61px;
   height: calc(100vh - 61px);
+  overflow: scroll;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
 
   .container{
     display: flex;
