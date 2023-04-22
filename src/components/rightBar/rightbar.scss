@@ -1,10 +1,15 @@
+@import '../../style.scss';
+
 .rightBar{
+  @include themify($themes){
+
+
   position: sticky;
   top: 61px;
   height: calc(100vh - 61px);
   overflow: scroll;
   flex:3;
-  background-color: rgb(255, 221, 187);
+  background-color: themed('bgSoft');
 
   &::-webkit-scrollbar{
     display: none;
@@ -16,17 +21,17 @@
 
     
     .item{
-      background-color: rgb(255, 255, 255);
+      background-color: themed('bg');
       padding: 5px 15px;
       margin-left: 10px;
       margin-bottom: 10px;
-      ;
+      
       
       
       p{
         font-weight: normal;
         font-size: 16px;
-        color: rgb(94, 92, 92);
+        color:themed('textColorSoft');
         margin-bottom: 10px;
       }
 
@@ -70,7 +75,7 @@
 
           span{
             font-weight: 600;
-            color: black;
+            color:themed('textColor');
             font-size: 14px;
             margin-right: 10px;
           }
@@ -81,7 +86,7 @@
         }
 
         span{
-          color:rgb(135, 135, 140);
+          color:themed('textColorSoft');
           align-self:inherit;
         }
 
@@ -106,4 +111,5 @@
       }
     }
   }
+}
 }
