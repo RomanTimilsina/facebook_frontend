@@ -15,16 +15,20 @@ import Profile from "./pages/profile/Profile";
 import './style.scss'
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
+import { AuthContext } from "./context/authContext";
 function App() {
 
-  const currentUser = true
-
   const {darkMode} = useContext(DarkModeContext)
+
+     const {currentUser} = useContext(AuthContext)
+  
+
 
   console.log(darkMode)
   const Layout = () => {
     return (
-      <div className= {darkMode ? 'theme-dark' : 'theme-light'} style={{background: `${darkMode ? '#222' : 'white'}`}}>
+      <div style={{background: `${darkMode ? '#222' : 'white'}`}}>
+      <div className= {darkMode ? 'theme-dark' : 'theme-light'} >
         <NavBar />
         <div style={{display:'flex'}}>
         <LeftBar />
@@ -32,7 +36,9 @@ function App() {
         <Outlet />
         </div>
         <RightBar />
+
         </div>
+      </div>
       </div>
     )
   }
