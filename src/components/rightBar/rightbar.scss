@@ -8,6 +8,8 @@
   top: 61px;
   height: calc(100vh - 61px);
   overflow: scroll;
+  min-width: 200px;
+
   flex:3;
   background-color: themed('bgSoft');
 

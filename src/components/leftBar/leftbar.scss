@@ -5,6 +5,7 @@
   flex: 2;
   position: sticky;
   top: 61px;
+  min-width: 200px;
   height: calc(100vh - 61px);
   overflow: scroll;
   background-color: themed('bg');
